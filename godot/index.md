@@ -4,8 +4,11 @@ layout: home
 
 hero:
   name: "FOSSonTop"
-  text: "Godot - Pong 2D Beginner Guide"
-
+  text: "Godot - Beginner Guides"
+  actions:
+    - theme: brand
+      text: Go back
+      link: /gamedev
 
 features:
 #  - icon: We'll fill these later as we're doing the migration. You can copypaste google fonts svg file contents here and it will work
