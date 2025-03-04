@@ -17,7 +17,7 @@ title: Scene Handling
 
 ![Add new scene](./assets/scene/5.png)
 
-6. Which will look the same as we selected 2D Scene, but rather that clicking 2D Scene click on Other Node [press Ctrl + A]
+6. Which will look the same as we selected 2D Scene, but rather that clicking 2D Scene click on Other Node [press Ctrl + A].
 7. For this tutorial we are gonna creating Pong-2D game, so we will use character2D for the board.
 
 ![Add Character](./assets/scene/7.png)
@@ -27,12 +27,25 @@ title: Scene Handling
 
 ![Add Sprite](./assets/scene/9.png)
 
-10. To add an image the sprite, first click on the Sprite2D, then we have to drag the image from the FileSystem to Texture under Inspector tab on the right-top side.
+10. To add an image the sprite, first click on the Sprite2D, then we have to drag the image from the FileSystem to Texture under Inspector tab on the top-right.
 
 ![How to add Image to Sprite](./assets/scene/10.png)
 
-11. Now to add collision to a character, we are gonna use a node called CollisionShape2D which will come under board node.
+11. We can resize it concurrently by pressing Alt + drag from the edge.
+12. We can change the color of the image by click Modulate from Visibility option under CanvasItem tab.
 
-![](./assets/scene/11.png)
+![Change the Color of the Icon](./assets/scene/12.png)
 
+13. Now to add collision to a character, we are gonna use a node called CollisionShape2D which will come under board node.
 
+![Add CollisionShape2D](./assets/scene/13.png)
+
+14. Now click on the CollisionShape2D, on the top-right corner under the properties of CollisionShape2D tab and click on the drop-down in shapes option. And choose the desired shapes for the collision body.
+
+![Add Collision Shape](./assets/scene/14.png)
+
+15. For this docs, we are choosing rectangle for the board, you guys can experiment with it.
+
+![Add Rectangle Collision Shape](./assets/scene/15.png)
+
+16. Just as Resizing the image we can do the same thing here for CollisionShape2D.
