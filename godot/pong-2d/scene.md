@@ -49,3 +49,29 @@ title: Scene Handling
 ![Add Rectangle Collision Shape](./assets/scene/15.png)
 
 16. Just as Resizing the image we can do the same thing here for CollisionShape2D.
+17. After all the tweaking it will look like this.
+
+![CollisionShape and Sprite](./assets/scene/17.png)
+
+18. To add a script to the board, first we have to click on the board node and click on the script icon on the top.
+
+![Add Script](./assets/scene/18.png)
+
+19. Let file name be the same as the board node(like board.gd).
+20. And this will open the script editor when we can add the code/script for the specified node.
+21. Add this code to get the board move up and down in the y axis: 
+
+```GDScript
+extends CharacterBody2D
+
+const SPEED := 300.0
+const getXDir := 0
+
+func getYDir() -> float:
+	return Input.get_action_strength("down") - Input.get_action_strength("up")
+	
+func _physics_process(delta: float) -> void:
+	var dir: Vector2 = Vector2(getXDir, getYDir())
+	velocity = dir * SPEED
+	move_and_slide()
+```
