@@ -59,7 +59,11 @@ title: Scene Handling
 
 19. Let file name be the same as the board node(like board.gd).
 20. And this will open the script editor when we can add the code/script for the specified node.
-21. Add this code to get the board move up and down in the y axis: 
+21. After we have do this we have to link this to the parent node which is named game node
+
+![Link Board to Game](./assets/scene/21.png)
+
+2. Add this code to get the board move up and down in the y axis: 
 
 ```GDScript
 extends CharacterBody2D
@@ -75,3 +79,4 @@ func _physics_process(delta: float) -> void:
 	velocity = dir * SPEED
 	move_and_slide()
 ```
+
