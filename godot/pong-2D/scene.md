@@ -136,7 +136,7 @@ func _physics_process(delta: float) -> void:
 ```GDScript
 extends CharacterBody2D
 
-const SPEED = 5.0
+const SPEED = 25.0
 
 func _ready() -> void:
 	velocity = Vector2(-SPEED, 0)
@@ -157,3 +157,23 @@ func _physics_process(delta: float) -> void:
 38. Just for clarification, we never add any wall in the game, so the ball might go into oblivion.
 39. For now, the game doesn't have an end, as it wont show any scores.
 <!--40. Now we will add -->
+
+40. For the walls, we will be using StaticBody2D so as same as how the board's and ball was insert in the same way we add the StaticBody2D.
+41. As save it in another folder called Walls in the src.
+
+![Walls Node](./assets/scene/41.png)
+
+42. For the CollisionShape2D node use RectangleShape2D for the Walls.  
+
+![Walls Node](./assets/scene/42.png)
+
+43. Now link the Wall node with the game node.
+44. Finally it will look like this.
+
+![Complete Scence](./assets/scene/44.png)
+
+45. Now Try run the game and enjoy the game without an end. :smile:
+
+46. We if face any issues like the board moving with ball just remember to change the motion mode property of CharacterBody2D from Grounded to Floating for both boards.
+
+![Issues](./assets/scene/46.png)
