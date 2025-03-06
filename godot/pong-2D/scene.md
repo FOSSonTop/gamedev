@@ -3,7 +3,7 @@ order: 4
 title: Scene Handling
 ---
 
-> [!NOTE]  
+> [!WARNING]  
 > The Assets should be downloaded before following this steps.
 
 <!-- use screenshots as much as possible -->
@@ -139,16 +139,27 @@ func _physics_process(delta: float) -> void:
 ```GDScript
 extends CharacterBody2D
 
+
 const SPEED = 15.0
+var initial_position: Vector2
 
 func _ready() -> void:
 	velocity = Vector2(-SPEED, 0)
+	initial_position = position
 
 func _physics_process(delta: float) -> void:
 	var col: KinematicCollision2D = move_and_collide(velocity)
 	if col:
-		var normal := col.get_normal()
-		velocity = velocity.bounce(normal)
+		if col.get_collider().is_in_group("Walls"):  
+			reset()
+		else:
+			var normal := col.get_normal()
+			velocity = velocity.bounce(normal)
+	
+func reset() -> void:
+	position = initial_position
+	velocity = Vector2(-SPEED, 0)
+
 ```
 
 35. After adding the script link the ball node the game node same as how the board's were linked.
@@ -159,24 +170,24 @@ func _physics_process(delta: float) -> void:
 37. Now try run the Game again.
 38. Just for clarification, we never add any wall in the game, so the ball might go into oblivion.
 39. For now, the game doesn't have an end, as it wont show any scores.
-<!--40. Now we will add -->
 
-40. For the walls, we will be using StaticBody2D so as same as how the board's and ball was insert in the same way we add the StaticBody2D.
+40. For the  Ceiling and Floor, we will be using StaticBody2D so as same as how the board's and ball was insert in the same way we add the StaticBody2D.
 41. As save it in another folder called Walls in the src.
 
 ![Walls Node](./assets/scene/41.png)
 
 42. For the CollisionShape2D node use RectangleShape2D for the Walls.  
+43. For the Sides we will create a new scene with StaticBody2D called Endpoints with CollisionShape2D as the sides and save it in a folder called Endpoints.
 
-![Walls Node](./assets/scene/42.png)
+![Endpoints Node](./assets/scene/43.png)
 
-43. Now link the Wall node with the game node.
-44. Finally it will look like this.
+44. Now link the Wall node with the game node.
+45. And Group the Endpoint and call it Walls, this is so that the balls reset when they hit them.
 
-![Complete Scence](./assets/scene/44.png)
+![Walls Group](./assets/scene/45.png)
 
-45. Now Try run the game and enjoy the game without an end. :smile:
+46. Now Try run the game and enjoy the game without an end. :smile:
 
-46. We if face any issues like the board moving with ball just remember to change the motion mode property of CharacterBody2D from Grounded to Floating for both boards.
+47. We if face any issues like the board moving with ball just remember to change the motion mode property of CharacterBody2D from Grounded to Floating for both boards.
 
-![Issues](./assets/scene/46.png)
+![Issues](./assets/scene/47.png)
