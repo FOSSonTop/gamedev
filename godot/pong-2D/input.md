@@ -3,6 +3,9 @@ order: 5
 title: Input Handling
 ---
 
+> [!WARNING]
+> This guide is unfinished, and this will be filled out later.
+
 > [!TIP]
 > How does our game know which key/action/movement is equivalent to an in-game action? It doesn't! We use an "Input Map" to easily manage potential input options. Here, we'll set `W` key for `up` action and `S` key for `down` down for player 1 along with  `↑` key for `up` action and `↓` key for `down` down for player 2
 

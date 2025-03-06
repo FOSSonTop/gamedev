@@ -3,6 +3,8 @@ order: 2
 title: Getting Started
 ---
 <!--Installation and prep -->
+> [!WARNING]
+> This guide is unfinished, and this will be filled out later.
 
 This section focuses on getting Godot set up on your system before you follow further guides.
 

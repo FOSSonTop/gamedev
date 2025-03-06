@@ -9,6 +9,8 @@ title: Scene Handling
 -->
 
 <!-- use screenshots as much as possible -->
+> [!WARNING]
+> This guide is unfinished, and this will be filled out later.
 
 # Scene Handling
 ## Node2D Basics
