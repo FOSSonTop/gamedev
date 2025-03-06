@@ -69,10 +69,11 @@ title: Scene Handling
 
 22. This is how it look after we insert the input map.
 
-![Assign Input Map](./assets/scene/21.1.png)
+![Assign Input Map](./assets/scene/22a.png)
 
 
 23. Add this code to get the board move up and down in the y axis: 
+
 ```GDScript
 extends CharacterBody2D
 
@@ -97,3 +98,27 @@ func _physics_process(delta: float) -> void:
 ![Add Enemy Board](./assets/scene/25.png)
 
 26. This is how the script gonna be for the Enemy board.
+
+```GDScript
+extends CharacterBody2D
+
+const SPEED := 300.0
+const getXDir := 0
+
+func getYDir() -> float:
+	return Input.get_action_strength("e_down") - Input.get_action_strength("e_up")
+	
+func _physics_process(delta: float) -> void:
+	var dir: Vector2 = Vector2(getXDir, getYDir())
+	velocity = dir * SPEED
+	move_and_slide()
+```
+
+27. Now link the E_Board node to the game node and drag to the right side in the 2D Canvas.
+
+![Add Enemy Board](./assets/scene/25.png)
+
+28. Now add a Camera 2D in game.
+
+29. With everything done run the game.
+
