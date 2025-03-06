@@ -59,6 +59,6 @@ Great! Now, open it and run the Editor.
 Create a new project by pressing Ctrl+N
 ![Creating Project](./assets/start/start-2.png)
 
-![Switch to 2D Mode](./assets/start/start-2.png)
+![Switch to 2D Mode](./assets/start/start-3.png)
 
 Now, go to the next section
