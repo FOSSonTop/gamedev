@@ -136,7 +136,7 @@ func _physics_process(delta: float) -> void:
 ```GDScript
 extends CharacterBody2D
 
-const SPEED = 25.0
+const SPEED = 15.0
 
 func _ready() -> void:
 	velocity = Vector2(-SPEED, 0)
