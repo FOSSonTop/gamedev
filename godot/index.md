@@ -15,6 +15,6 @@ features:
 #    title: 
 #    link: If you specify links, you can use them as buttons. Cool big buttons
   - title: Pong Starter Guide
-    details: A simple beginner friendly godot guide for Pong. 
+    details: A simple beginner friendly godot guide for Pong. Difficulty - ★★☆☆☆ (2/5 Stars) 
     link: /gamedev/godot/pong-2D
 ---

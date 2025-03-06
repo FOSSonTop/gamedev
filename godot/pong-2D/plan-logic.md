@@ -7,6 +7,7 @@ title: Planning Game Logic
 > [!WARNING]
 > This guide is unfinished, and this will be filled out later.
 
+# Planning Game Logic
 The general flow of the project will be:
 1. Scene Handling 
     - Setting up `Node2D`

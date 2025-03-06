@@ -21,6 +21,6 @@ features:
     details: List of Guides to get started with Godot
     link: /gamedev/godot/
   - title: Asset Handling
-    details: Creating game assets like Background Music, Background, Art/sprites, etc
+    details: Creating game assets like Background Music, Background, Art/sprites, etc. (WIP)
     link: /gamedev/assets/
 ---

@@ -8,6 +8,7 @@ title: Pong 2D - Introduction
 > [!WARNING]
 > This guide is unfinished, and this will be filled out later.
 
+# Introduction
 This is an easy to follow guide to make your own Pong 2D game from scratch in under 1-2 hours.
 
 Game Engine: `Godot`

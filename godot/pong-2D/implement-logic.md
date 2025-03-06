@@ -8,6 +8,7 @@ title: Implementing Game Logic
 > [!WARNING]
 > This guide is unfinished, and this will be fully filled out later.
 
+# Implementing Game Logic
 ## Board Movement
 23. Add this code to get the board move up and down in the y axis: 
 

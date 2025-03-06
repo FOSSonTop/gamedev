@@ -8,6 +8,7 @@ title: Handling Assets
 > [!TIP]
 > Feel free to skip this section and go to the next one.
 
+# Handling Assets
 ::: details Explanation
-This part of the guide is not ready yet, so we'll be using filled colors and manipulating existing assets like the godot icon. 
+This part of the guide is not ready yet, so we'll be using filled colors and manipulating existing assets like the godot icon. Please continue with the rest of the guide.
 :::

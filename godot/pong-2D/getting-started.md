@@ -12,7 +12,7 @@ This section focuses on getting Godot set up on your system before you follow fu
 > [!TIP]
 > For this guide, we will be downloading the regular one because we aren't using the .NET features.
 
-
+# Getting Started
 ## Download Guide
 
 Follow the given instructions to download and get started with Godot.
