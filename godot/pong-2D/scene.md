@@ -63,7 +63,16 @@ title: Scene Handling
 
 ![Link Board to Game](./assets/scene/21.png)
 
-22. Add this code to get the board move up and down in the y axis: 
+22. We insert the script we have to assign Input Map to the reciprocal keys.
+
+![Assign Input Map](./assets/scene/22.png)
+
+22. This is how it look after we insert the input map.
+
+![Assign Input Map](./assets/scene/21.1.png)
+
+
+23. Add this code to get the board move up and down in the y axis: 
 ```GDScript
 extends CharacterBody2D
 
@@ -79,8 +88,12 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 ```
 
-23. Before this, remember to drag the board to the left side in the 2D in game node
+24. Before this, remember to drag the board to the left side in the 2D in game node
 
-![Link Board to Game](./assets/scene/23.png)
+![Drag The Board to the game node](./assets/scene/24.png)
 
-24. 
+25. To the Same for the Enemy Board except for the script and how it is placed in 2D of game node, also remember to save it as E_Board folder in src.
+
+![Add Enemy Board](./assets/scene/25.png)
+
+26. This is how the script gonna be for the Enemy board.
