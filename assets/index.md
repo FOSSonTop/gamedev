@@ -1,26 +1,27 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+exclude: true
 
 hero:
   name: "FOSSonTop"
-  text: "GameDev Docs"
+  text: "Guide to working with Assets"
   actions:
     - theme: brand
-      text: Add Content to Docs
-      link: https://github.com/FOSSonTop/gamedev
+      text: Go back to Game Development Page
+      link: /gamedev
     - theme: alt
-      text: Go Back
+      text: Go Back to Previous Tab
       link: ../index
 
 features:
 #  - icon: We'll fill these later as we're doing the migration. You can copypaste google fonts svg file contents here and it will work
 #    title: 
 #    link: If you specify links, you can use them as buttons. Cool big buttons
-  - title: Godot Guides
-    details: List of Guides to get started with Godot
-    link: /gamedev/godot/
-  - title: Asset Handling
-    details: Creating game assets like Background Music, Background, Art/sprites, etc. (WIP)
-    link: /gamedev/assets/
+  - title: List of Useful Open Source Apps
+    link: /gamedev/assets/list
+  - title: Working with Image Assets
+    link: /gamedev/assets/image/
+  - title: Working with Music Assets
+    link: /gamedev/assets/music/
 ---
