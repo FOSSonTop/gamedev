@@ -3,6 +3,9 @@ order: 4
 title: Scene Handling
 ---
 
+> [!NOTE]  
+> The Assets should be downloaded before following this steps.
+
 <!-- use screenshots as much as possible -->
 
 1. Select 2D Scene node to create the parent node
