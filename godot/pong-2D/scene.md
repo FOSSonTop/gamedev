@@ -63,10 +63,7 @@ title: Scene Handling
 
 ![Link Board to Game](./assets/scene/21.png)
 
-
-
-2. Add this code to get the board move up and down in the y axis: 
-
+22. Add this code to get the board move up and down in the y axis: 
 ```GDScript
 extends CharacterBody2D
 
@@ -82,3 +79,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 ```
 
+23. Before this, remember to drag the board to the left side in the 2D in game node
+
+![Link Board to Game](./assets/scene/23.png)
+
+24. 
