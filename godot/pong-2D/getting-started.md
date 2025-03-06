@@ -16,7 +16,7 @@ This section focuses on getting Godot set up on your system before you follow fu
 ## Download Guide
 
 Follow the given instructions to download and get started with Godot.
-::: details Download Guide
+::: details Download Guide(Windows 10/11)
 
 You need to go to the [official download link](https://godotengine.org/download) inside the browser. Since we're going to be using windows, it automatically redirected us to the windows page.
 
