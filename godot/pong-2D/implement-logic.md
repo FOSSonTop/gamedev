@@ -62,8 +62,11 @@ func _physics_process(delta: float) -> void:
 ![Run Game](./assets/scene/29.png)
 
 30. Try moving both the board using Up and Down Arrow and also with W and S.
-31. Now lets add the ball, by using the same character2D node like the board.
-32. Except this time we will be using a different icon and CollisionShape2D, the icon is downloaded from Google Fonts and CollisionShape we will be using CircleShape2D.
+31. Now lets add the ball, by using the same CharacterBody2D node like the board.
+32. Except this time we will be using a different icon and `CollisionShape2D`, the icon is downloaded from Google Fonts and CollisionShape we will be using `CircleShape2D`.
+
+> [!TIP]
+> This section is optional
 
 ![Ball Node](./assets/scene/32.png)
 
@@ -115,13 +118,13 @@ func reset() -> void:
 38. Just for clarification, we haven't added any wall in the game yet, so the ball might go into oblivion or worse.
 39. For now, the game doesn't have an end, as it wont show any scores.
 
-40. For the  Ceiling and Floor, we will be using StaticBody2D so as same as how the board's and ball was insert in the same way we add the StaticBody2D.
+40. For the  Ceiling and Floor, we will be using `StaticBody2D` so as same as how the board's and ball was insert in the same way we add the `StaticBody2D`.
 41. As save it in another folder called Walls in the src.
 
 ![Walls Node](./assets/scene/41.png)
 
-42. For the CollisionShape2D node use RectangleShape2D for the Walls.  
-43. For the Sides we will create a new scene with StaticBody2D called Endpoints with CollisionShape2D as the sides and save it in a folder called Endpoints.
+42. For the `CollisionShape2D` node use RectangleShape2D for the Walls.  
+43. For the Sides we will create a new scene with `StaticBody2D` called Endpoints with `CollisionShape2D` as the sides and save it in a folder called Endpoints.
 
 ![Endpoints Node](./assets/scene/43.png)
 
@@ -132,6 +135,6 @@ func reset() -> void:
 
 46. Now Try run the game and enjoy the game without an end. :smile:
 
-47. If we face any issues like the board moving with ball, just remember to change the motion mode property of CharacterBody2D from Grounded to Floating for both boards.
+47. If we face any issues like the board moving with ball, just remember to change the motion mode property of `CharacterBody2D` from Grounded to Floating for both boards.
 
 ![Issues](./assets/scene/47.png)

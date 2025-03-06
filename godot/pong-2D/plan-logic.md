@@ -9,12 +9,12 @@ title: Planning Game Logic
 
 The general flow of the project will be:
 1. Scene Handling 
-    - Setting up Node2D
+    - Setting up `Node2D`
     - Using Collision Shapes
     - Navigating scripting options
-2. Planning Logic(You are here), and then implementing them
+2. Planning Logic, and then implementing them (You are here)
     - We need many elements like:
-        - Ball to bounce
+        - Ball being able to bounce
         - Board that you bounce the ball against
         - Handling the Up/Down input and moving the Boards
         - The ball should reset position if it crosses the edges

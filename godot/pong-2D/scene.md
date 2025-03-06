@@ -3,8 +3,10 @@ order: 4
 title: Scene Handling
 ---
 
+<!--
 > [!WARNING]  
 > The Assets should be downloaded before following this steps.
+-->
 
 <!-- use screenshots as much as possible -->
 
@@ -27,12 +29,12 @@ title: Scene Handling
 
 ![Add Character](./assets/scene/7.png)
 
-8. After adding character2D, rename it to Board and save it to the folder board in src.
-9. To add image we are use a node called Sprite which come under the Board node [previously Character2D].
+8. After adding `CharacterBody2D`, rename it to Board and save it to the folder board in src.
+9. To add image we are use a node called `Sprite2D` which come under the Board node [previously Character2D].
 
 ![Add Sprite](./assets/scene/9.png)
 
-10. To add an image the sprite, first click on the Sprite2D, then we have to drag the image from the FileSystem to Texture under Inspector tab on the top-right.
+10. To add an image the sprite, first click on the `Sprite2D`, then we have to drag the image from the FileSystem to Texture under Inspector tab on the top-right.
 
 ![How to add Image to Sprite](./assets/scene/10.png)
 
@@ -46,11 +48,11 @@ title: Scene Handling
 > [!TIP]
 > We want our ball and paddles to feel like real bodies and have physics applied to them. The first step to do this is to set a collision body around it. 
 
-13. Now to add collision to a character, we are gonna use a node called CollisionShape2D which will come under board node.
+13. Now to add collision to a character, we are gonna use a node called `CollisionShape2D` which will come under board node.
 
 ![Add CollisionShape2D](./assets/scene/13.png)
 
-14. Now click on the CollisionShape2D, on the top-right corner under the properties of CollisionShape2D tab and click on the drop-down in shapes option. And choose the desired shapes for the collision body.
+14. Now click on the `CollisionShape2D`, on the top-right corner under the properties of `CollisionShape2D` tab and click on the drop-down in shapes option. And choose the desired shapes for the collision body.
 
 ![Add Collision Shape](./assets/scene/14.png)
 
@@ -58,7 +60,7 @@ title: Scene Handling
 
 ![Add Rectangle Collision Shape](./assets/scene/15.png)
 
-16. Just as Resizing the image we can do the same thing here for CollisionShape2D.
+16. Just as Resizing the image we can do the same thing here for `CollisionShape2D`.
 17. After all the tweaking it will look like this.
 
 ![CollisionShape and Sprite](./assets/scene/17.png)
