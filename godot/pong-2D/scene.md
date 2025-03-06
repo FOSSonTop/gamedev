@@ -120,5 +120,40 @@ func _physics_process(delta: float) -> void:
 
 28. Now add a Camera 2D in game.
 
-29. With everything done run the game.
+29. With everything done, try running the game by pressing (F5) if that doesn't work (Ctrl + Shift + F5).
 
+![Run Game](./assets/scene/29.png)
+
+30. Try moving both the board using Up and Down Arrow and also with W and S.
+31. Now lets add the ball, by using the same character2D node like the board.
+32. Except this time we will be using a different icon and CollisionShape2D, the icon is downloaded from Google Fonts and CollisionShape we will be using CircleShape2D.
+
+![Ball Node](./assets/scene/32.png)
+
+33. Don't forget to save the file to a folder called Ball in src and to store both the .tscn and .gd file in src.
+34. Now we are gonna add a script to the ball to bounce and move the ball.
+
+```GDScript
+extends CharacterBody2D
+
+const SPEED = 5.0
+
+func _ready() -> void:
+	velocity = Vector2(-SPEED, 0)
+
+func _physics_process(delta: float) -> void:
+	var col: KinematicCollision2D = move_and_collide(velocity)
+	if col:
+		var normal := col.get_normal()
+		velocity = velocity.bounce(normal)
+```
+
+35. After adding the script link the ball node the game node same as how the board's were linked.
+36. Now drag the ball to the bottom of the game in the 2D canvas.
+
+![Ball Node](./assets/scene/36.png)
+
+37. Now try run the Game again.
+38. Just for clarification, we never add any wall in the game, so the ball might go into oblivion.
+39. For now, the game doesn't have an end, as it wont show any scores.
+<!--40. Now we will add -->
